@@ -43,7 +43,7 @@ resource "azurerm_container_app_environment" "doca" {
 #  docker_step {
 #    dockerfile_path      = "Dockerfile.azure-pipelines"
 #    context_path         = "https://github.com/Azure-Samples/container-apps-ci-cd-runner-tutorial/"
-#    context_access_token = "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"
+#    context_access_token = var.pat
 #    image_names          = ["azure-pipelines-agent:1.0"]
 #  }
 #}
